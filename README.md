@@ -26,3 +26,11 @@ deactivate
 2. Store the data in a MQTT Server hosted in the cloud
 3. Read the data and take some action
 
+## Reference Architecture 
+
+![Architecture](img/arch.png "IoT Architecture")
+
+```
+ALEXAKOS, Christos et al. Building an industrial iot infrastructure with open source software 
+for smart energy. In: 2019 First International Conference on Societal Automation (SA). IEEE, 2019. p. 1-8.
+```
