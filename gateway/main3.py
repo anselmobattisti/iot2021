@@ -16,6 +16,7 @@ def main():
         while (1):
             message, address = s.recvfrom(8192)
             ts = int(time.time())
+            print(message)
             if ts%5 == 0:
                 sensor_data = str(message).split(",")
                 timestamp = sensor_data[0].replace("b'", "")
