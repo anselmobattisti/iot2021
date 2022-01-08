@@ -17,7 +17,7 @@ fast_mqtt.init_app(app)
 # Mensagem de conecção
 @fast_mqtt.on_connect()
 def connect(client, flags, rc, properties):
-    fast_mqtt.client.subscribe("/mqtt") #subscribing mqtt topic 
+    # fast_mqtt.client.subscribe("/mqtt") #subscribing mqtt topic 
     print("Connected: ", client, flags, rc, properties)
 
 # Quando uma mensagem é postada no tópíco
@@ -50,7 +50,7 @@ async def get_data():
     mf = open(FILE_NAME, "r+")
     file_content = mf.readlines()
     angle = re.findall( r'\d+\.*\d*', str(file_content))
-    return angle[0]
+    return {float(angle[0])}
 
 # @app.get("/post")
 # async def post_data():
