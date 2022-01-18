@@ -69,3 +69,8 @@ ALEXAKOS, Christos et al. Building an industrial IoT infrastructure with open so
 
 1. https://github.com/chanlhock/IMU/blob/master/imu.py
 2. https://github.com/olliematthews/phone_animation/blob/master/run.py
+
+
+Para executar a API 
+
+uvicorn main:app --reload

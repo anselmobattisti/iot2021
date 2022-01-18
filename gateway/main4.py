@@ -20,8 +20,8 @@ def main():
                 sensor_data = str(message).split(",")
                 timestamp = sensor_data[0].replace("b'", "")
                 y_pos = sensor_data[3]
-                # pegar dados do gps
-                if sensor_data[1] == ' 1':
+                # pegar dados do gps                
+                if len(sensor_data) > 5:
                     # print(sensor_data[2],sensor_data[3])
                     msg = "{},{}".format(sensor_data[2],sensor_data[3])
                     publish.single(mqtt_topic, msg, hostname=mqtt_broker, port=mqtt_port)                
