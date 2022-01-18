@@ -14,8 +14,8 @@ def main():
             if ts%5 == 0:
                 sensor_data = str(message).split(",")
                 timestamp = sensor_data[0].replace("b'", "")
-                y_pos = sensor_data[3]
-                msg = "t:{},y:{}".format(timestamp,y_pos)
+                y_pos = sensor_data[3].strip()
+                msg = "<data><time>{}</time><y_pos>{}</y_pos></data>".format(timestamp,y_pos)
                 print(msg)
 
 if __name__ == "__main__":

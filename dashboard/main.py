@@ -49,7 +49,7 @@ async def get_topic_data(client, topic, payload, qos, properties):
 async def get_data():
     mf = open(FILE_NAME, "r+")
     file_content = mf.readlines()
-    angle = re.findall( r'\d+\.*\d*', str(file_content))
+    angle = re.findall( r'\d+\.*\d*', str(file_content))    
     return {float(angle[0])}
 
 # @app.get("/post")

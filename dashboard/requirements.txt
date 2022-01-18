@@ -1,2 +1,4 @@
 fastapi
 uvicorn
+paho-mqtt
+fastapi_mqtt
