@@ -56,3 +56,8 @@ async def get_data():
 # async def post_data():
 #     fast_mqtt.publish(mqtt_topic, "Hello from Fastapi") #publishing mqtt topic 
 #     return {"result": True,"message":"Published" }
+
+
+@app.get("/teste")
+async def teste():
+    return "Teste"
